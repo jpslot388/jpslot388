@@ -16,7 +16,7 @@ async function handleIncomingRequest(event) {
    
     return new Response("Ok", { status: 200 });
   } else if (method === "GET" && path === "/configure-webhook") {
-    const apiUrl = `http://telegram.me/jpslot388_bot${telegramAuthToken}/setWebhook?url=${workerUrl}${webhookEndpoint}`;
+    const apiUrl = `http://t.me/Jpslot388_bot${telegramAuthToken}/setWebhook?url=${workerUrl}${webhookEndpoint}`;
     
     const response = await fetch(apiUrl);
     
@@ -54,21 +54,21 @@ dengan deposit dan tarik dana dengan cepat dan aman
           inline_keyboard: [
             [
               {
-                text: "✏️ ចុះឈ្មោះឥតគិតថ្លៃឥឡូវនេះ",
-                url: "https://t.me/Adsjpslot388_bot/Register"
+                text: "✏️ LInk daftar gacor",
+                url: "https://t.me/Jpslot388_bot/Register"
               }
             ],
             [
               {
                 text: "Login dan daftar link gacor",
-                url: "[https://t.me/JPSLOT388](http://telegram.me/jpslot388_bot)"
+                url: "https://t.me/Jpslot388_bot"
               }
             ]
           ]
         }
       };
 
-      const sendPhotoUrl = `https://api.telegram.org/bot${telegramAuthToken}/sendPhoto`;
+      const sendPhotoUrl = `https://core.telegram.org/bots/api}/sendPhoto`;
 
       await fetch(sendPhotoUrl, {
         method: "POST",
